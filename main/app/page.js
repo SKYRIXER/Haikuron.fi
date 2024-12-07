@@ -11,14 +11,14 @@ export default function MainPage() {
     const dogs = [
         { 
             id: 1, 
-            name: "Laggan Noriaki", 
-            description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on jo 8 vuotta vanha.", 
+            name: "Laggan Haiku", 
+            description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on jo 6 vuotta vanha ja on meidän pentueen kantaäiti.", 
             image: totoro1 
         },
         { 
             id: 2, 
-            name: "Laggan Haiku", 
-            description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on jo 6 vuotta vanha.", 
+            name: "Laggan Noriaki", 
+            description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on jo 9 vuotta vanha.", 
             image: totoro1 
         },
         { 
