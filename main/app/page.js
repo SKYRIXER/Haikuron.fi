@@ -12,19 +12,19 @@ export default function MainPage() {
         { 
             id: 1, 
             name: "Laggan Haiku", 
-            description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on jo 6 vuotta vanha ja on meidän pentueen kantaäiti.", 
+            description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on 6 vuotta ja on meidän pentueen kantaäiti.", 
             image: totoro1 
         },
         { 
             id: 2, 
             name: "Laggan Noriaki", 
-            description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on jo 9 vuotta vanha.", 
+            description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on 9 vuotias.", 
             image: totoro1 
         },
         { 
             id: 3, 
             name: "Haikuron Totoro", 
-            description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotta vanha ja on kennelimme ensimmäisestä pentueesta.", 
+            description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
             image: totoro1 
         },
     ];
