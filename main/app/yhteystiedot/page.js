@@ -38,56 +38,6 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Contact Form Section */}
-            <section className="bg-gray-800 py-16 px-4">
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-white mb-8">Lähetä Viesti</h2>
-                    <form className="space-y-6">
-                        <div>
-                            <label htmlFor="name" className="block text-lg mb-2">Nimi</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                className="w-full p-3 rounded-lg bg-gray-700 text-white"
-                                placeholder="Kirjoita nimesi"
-                                required
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="email" className="block text-lg mb-2">Sähköposti</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                className="w-full p-3 rounded-lg bg-gray-700 text-white"
-                                placeholder="Kirjoita sähköpostiosoitteesi"
-                                required
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="message" className="block text-lg mb-2">Viesti</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="6"
-                                className="w-full p-3 rounded-lg bg-gray-700 text-white"
-                                placeholder="Kirjoita viestisi"
-                                required
-                            />
-                        </div>
-                        <div className="text-center">
-                            <button
-                                type="submit"
-                                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg"
-                            >
-                                Lähetä
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
             <Footer />
         </div>
     );

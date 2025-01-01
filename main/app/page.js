@@ -1,10 +1,7 @@
 import React from 'react';
+import Image from 'next/image.js';
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
-// import heroImage from './img/hero-image.jpg'; // Replace with your actual hero image
-import totoro1 from './img/totoro-ulko.jpg'; // Local image imports for dynamic data
-// import lumi from './img/lumi.jpg';
-// import halla from './img/halla.jpg';
 
 export default function MainPage() {
     // Dynamic data for the dogs
@@ -13,19 +10,19 @@ export default function MainPage() {
             id: 1, 
             name: "Laggan Haiku", 
             description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on 6 vuotta ja on meidän pentueen kantaäiti.", 
-            image: totoro1 
+            image: "/img/Haiku.jpg" 
         },
         { 
             id: 2, 
             name: "Laggan Noriaki", 
             description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on 9 vuotias.", 
-            image: totoro1 
+            image: "/img/Nori.jpg" 
         },
         { 
             id: 3, 
             name: "Haikuron Totoro", 
             description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
-            image: totoro1 
+            image: "/img/Totoro.jpg" 
         },
     ];
 
@@ -36,7 +33,7 @@ export default function MainPage() {
             {/* Hero Section */}
             <section
                 className="relative bg-cover bg-center h-screen"
-                style={{ backgroundImage: `url(${totoro1})` }}
+                style={{ backgroundImage: `url(${"/img/banner.jpg" })` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
@@ -56,7 +53,7 @@ export default function MainPage() {
                             <img 
                                 src={dog.image} 
                                 alt={dog.name} 
-                                className="rounded-lg mb-4 w-full h-48 object-cover" 
+                                className="rounded-lg mb-4 w-full h-72 object-cover" 
                             />
                             <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
                             <p>{dog.description}</p>
