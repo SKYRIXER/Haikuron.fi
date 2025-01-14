@@ -1,28 +1,30 @@
 import React from 'react';
-import Image from 'next/image.js';
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 
 export default function MainPage() {
-    // Dynamic data for the dogs
+    // data for the dogs
     const dogs = [
         { 
             id: 1, 
             name: "Laggan Haiku", 
             description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on 6 vuotta ja on meidän pentueen kantaäiti.", 
-            image: "/img/Haiku.jpg" 
+            image: "/img/Haiku.jpg",
+            imagetext: "Kuvaaja: Aino Vakkila"
         },
         { 
             id: 2, 
             name: "Laggan Noriaki", 
             description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on 9 vuotias.", 
-            image: "/img/Nori.jpg" 
+            image: "/img/Nori.jpg",
+            imagetext: "Kuvaaja: Ida Jauros"
         },
         { 
             id: 3, 
             name: "Haikuron Totoro", 
             description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
-            image: "/img/Totoro.jpg" 
+            image: "/img/Totoro.jpg",
+            imagetext: "Kuvaaja: Aino Vakkila"
         },
     ];
 
@@ -47,7 +49,7 @@ export default function MainPage() {
             <section className="py-16 px-4">
                 <h2 className="text-center text-3xl font-bold mb-12">Tutustu koiriimme</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {/* Render dog cards dynamically */}
+                    {/* Render dog cards */}
                     {dogs.map(dog => (
                         <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg">
                             <img 
@@ -55,6 +57,7 @@ export default function MainPage() {
                                 alt={dog.name} 
                                 className="rounded-lg mb-4 w-full h-72 object-cover" 
                             />
+                            <p>{dog.imagetext}</p>
                             <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
                             <p>{dog.description}</p>
                         </div>
