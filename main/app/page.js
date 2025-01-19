@@ -1,33 +1,10 @@
 import React from 'react';
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
+import dogs from './data/dogs'; // Import the dogs data
+import Link from 'next/link';
 
 export default function MainPage() {
-    // data for the dogs
-    const dogs = [
-        { 
-            id: 1, 
-            name: "Laggan Haiku", 
-            description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on 6 vuotta ja on meidän pentueen kantaäiti.", 
-            image: "/img/Haiku.jpg",
-            imagetext: "Kuvaaja: Aino Vakkila"
-        },
-        { 
-            id: 2, 
-            name: "Laggan Noriaki", 
-            description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on 9 vuotias.", 
-            image: "/img/Nori.jpg",
-            imagetext: "Kuvaaja: Ida Jauros"
-        },
-        { 
-            id: 3, 
-            name: "Haikuron Totoro", 
-            description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
-            image: "/img/Totoro.jpg",
-            imagetext: "Kuvaaja: Aino Vakkila"
-        },
-    ];
-
     return (
         <div className="bg-gray-900 min-h-screen text-white">
             <Header title="Kennel Haikuron" />
@@ -52,14 +29,16 @@ export default function MainPage() {
                     {/* Render dog cards */}
                     {dogs.map(dog => (
                         <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg">
-                            <img 
-                                src={dog.image} 
-                                alt={dog.name} 
-                                className="rounded-lg mb-4 w-full h-72 object-cover" 
-                            />
-                            <p>{dog.imagetext}</p>
-                            <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
-                            <p>{dog.description}</p>
+                            <Link href={`/tietoa/${dog.id}`}>
+                                <img 
+                                    src={dog.image} 
+                                    alt={dog.name} 
+                                    className="rounded-lg mb-4 w-full h-72 object-cover" 
+                                />
+                                <p>{dog.imagetext}</p>
+                                <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
+                                <p>{dog.description}</p>
+                            </Link>                        
                         </div>
                     ))}
                 </div>
