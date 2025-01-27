@@ -28,7 +28,7 @@ export default function MainPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {/* Render dog cards */}
                     {dogs.map(dog => (
-                        <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg">
+                        <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg  hover:bg-gray-700 transition-colors duration-300">
                             <Link href={`/tietoa/${dog.shortname}`}>
                                 <img 
                                     src={dog.image} 
