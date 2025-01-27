@@ -29,7 +29,7 @@ export default function MainPage() {
                     {/* Render dog cards */}
                     {dogs.map(dog => (
                         <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg">
-                            <Link href={`/tietoa/${dog.id}`}>
+                            <Link href={`/tietoa/${dog.shortname}`}>
                                 <img 
                                     src={dog.image} 
                                     alt={dog.name} 
