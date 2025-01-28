@@ -22,7 +22,7 @@ const dogs = [
       name: "Haikuron Totoro",
       shortname: "totoro",
       story: "Totoron tarina sdasd asd asd asd asd asd ",
-      description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kenneamme ensimmäisestä pentueesta.", 
+      description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
       image: "/img/Totoro.jpg",
       imagetext: "Kuvaaja: Aino Vakkila"
     },
