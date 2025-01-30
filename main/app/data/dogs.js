@@ -28,4 +28,4 @@ const dogs = [
     },
   ];
   
-  export default dogs;
+export default dogs;

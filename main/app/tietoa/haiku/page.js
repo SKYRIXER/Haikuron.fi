@@ -3,13 +3,12 @@ import Footer from "@/app/components/footer";
 import dogs from "@/app/data/dogs";
 
 export default function DogsPage() {
-    // Select the first dog from the array
     const dog = dogs[0];
 
     return (
         <div className="bg-gray-900 min-h-screen text-white">
             <Header title="Koirat" />
-            {/* Dog Showcase Section */}
+            
             <section className="relative h-[500px] bg-cover bg-center" style={{ backgroundImage: `url(${dog.image})`, backgroundSize: 'cover', backgroundPosition: "50% 20%" }}>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10 flex items-center justify-center h-full">

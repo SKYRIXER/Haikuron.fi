@@ -7,7 +7,6 @@ export default function AboutPage() {
         <div className="bg-gray-900 min-h-screen text-white">
             <Header title="Tietoa Kennel Haikuronista" />
 
-            {/* Hero Section */}
             <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/img/about-hero.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
@@ -17,7 +16,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Main Information Section */}
             <section className="py-16 px-4">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8">Meistä</h2>
@@ -36,7 +34,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* History Section */}
             <section className="bg-gray-800 py-16 px-4">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center text-white mb-8">Historia</h2>
@@ -52,7 +49,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Our Values Section */}
             <section className="py-16 px-4">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8">Arvomme</h2>
@@ -74,7 +70,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Call to Action */}
             <section className="bg-gray-800 py-16 px-4">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold text-white mb-6">Kiinnostuitko?</h2>
