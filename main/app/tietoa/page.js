@@ -34,20 +34,17 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="bg-gray-800 py-16 px-4">
+            {/* <section className="bg-gray-800 py-16 px-4">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center text-white mb-8">Historia</h2>
                     <p className="text-lg mb-6">
-                        Kennel Haikuronin tarina alkoi pienestä unelmasta. Perustajamme aloittivat toimintansa
-                        rakkaudesta eläimiin ja erityisesti koiriin. Vuosien varrella kennel on kasvanut, mutta
-                        arvomme ovat säilyneet samoina: vastuullisuus, rakkaus ja omistautuminen.
+                        Kennel Haikuronin tarina
                     </p>
                     <p className="text-lg mb-6">
-                        Olemme kasvattaneet useita palkittuja koiria ja luoneet kestäviä ystävyyssuhteita asiakkaidemme
-                        kanssa. Jokainen koira on meille erityinen, ja heidän hyvinvointinsa on aina etusijalla.
+                        2 teksti
                     </p>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-16 px-4">
                 <div className="max-w-4xl mx-auto">

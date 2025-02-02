@@ -1,28 +1,28 @@
 const dogs = [
     { 
       id: 1, 
-      name: "Laggan Haiku",
+      name: "FI MVA Laggan Haiku",
       shortname: "haiku",
       story: "Haikun tarina sdasd asd asd asd asd asd ",
-      description: "Kutsumanimeltään Haiku, on meidän toisiksi vanhin koira joka on 6 vuotta ja on meidän pentueen kantaäiti.", 
+      description: "Kutsumanimeltään Haiku, 6 vuotias ja on meidän pentueen kantaäiti.", 
       image: "/img/Haiku.jpg",
       imagetext: "Kuvaaja: Aino Vakkila"
     },
     { 
       id: 2, 
-      name: "Laggan Noriaki",
+      name: "FI MVA Laggan Noriaki",
       shortname: "nori",
       story: "Norin tarina sdasd asd asd asd asd asd ",
-      description: "Kutsumanimeltään Nori, on meidän vanhin koira ja hän on 9 vuotias.", 
+      description: "Kutsumanimeltään Nori, hän on 9 vuotias.", 
       image: "/img/Nori.jpg",
       imagetext: "Kuvaaja: Ida Jauros"
     },
     { 
       id: 3, 
-      name: "Haikuron Totoro",
+      name: "FI JMVA Haikuron Totoro",
       shortname: "totoro",
       story: "Totoron tarina sdasd asd asd asd asd asd ",
-      description: "Kutsumanimeltään Totoro, on meidän nuorin koira joka on 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
+      description: "Kutsumanimeltään Totoro, 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
       image: "/img/Totoro.jpg",
       imagetext: "Kuvaaja: Aino Vakkila"
     },
