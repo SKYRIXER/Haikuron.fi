@@ -11,7 +11,7 @@ export default function MainPage() {
 
             <section
                 className="relative bg-cover bg-center h-screen"
-                style={{ backgroundImage: `url(${"/img/banner.jpg" })` }}
+                style={{ backgroundImage: `url(${"/img/main/banner.jpg" })` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">

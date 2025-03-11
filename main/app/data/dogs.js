@@ -5,7 +5,7 @@ const dogs = [
       shortname: "haiku",
       story: "Haikun tarina sdasd asd asd asd asd asd ",
       description: "Kutsumanimeltään Haiku, 6 vuotias ja on meidän pentueen kantaäiti.", 
-      image: "/img/Haiku.jpg",
+      image: "/img/main/Haiku.jpg",
       imagetext: "Kuvaaja: Aino Vakkila"
     },
     { 
@@ -14,7 +14,7 @@ const dogs = [
       shortname: "nori",
       story: "Norin tarina sdasd asd asd asd asd asd ",
       description: "Kutsumanimeltään Nori, hän on 9 vuotias.", 
-      image: "/img/Nori.jpg",
+      image: "/img/main/Nori.jpg",
       imagetext: "Kuvaaja: Ida Jauros"
     },
     { 
@@ -23,7 +23,7 @@ const dogs = [
       shortname: "totoro",
       story: "Totoron tarina sdasd asd asd asd asd asd ",
       description: "Kutsumanimeltään Totoro, 2 vuotias ja on kennelimme ensimmäisestä pentueesta.", 
-      image: "/img/Totoro.jpg",
+      image: "/img/main/Totoro.jpg",
       imagetext: "Kuvaaja: Aino Vakkila"
     },
   ];
