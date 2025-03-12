@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true
-  },
-  assetPrefix: '.',
-  basePath: '',
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false };
-    return config;
-  },
+    output: 'export',
+    trailingSlash: true,
+    images: {
+        unoptimized: true
+    },
+    basePath: '',
 }
 
-export default nextConfig;
+    export default nextConfig;

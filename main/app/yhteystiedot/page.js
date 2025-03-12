@@ -8,7 +8,7 @@ export default function ContactPage() {
             <Header title="Yhteystiedot" />
 
             <section className="relative bg-no-repeat bg-center h-screen" style={{ 
-                backgroundImage: "url('./img/banners/contact-hero.jpg')",
+                backgroundImage: "url('/img/banners/contact-hero.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: '50% 70%'
             }}>
