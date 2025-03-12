@@ -11,12 +11,12 @@ export default function MainPage() {
 
             <section
                 className="relative bg-cover bg-center h-screen"
-                style={{ backgroundImage: `url(${"/img/main/banner.jpg" })` }}
+                style={{ backgroundImage: `url(${"./img/main/banner.jpg" })` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">Tervetuloa Haikuron kenneliin!</h2>
-                        <p className="text-lg md:text-xl">Kasvatamme ja rakastamme parhaita karvaisia ystäviämme.</p>
+                        <p className="text-lg md:text-xl">Kasvatamme ja rakastamme shibojamme.</p>
                     </div>
                 </div>
             </section>

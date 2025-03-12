@@ -30,14 +30,14 @@ export default function SuunnitelmatPage() {
                                         <li>Näyttelytulokset: FI MVA</li>
                                     </ul>
                                 </div>
-                                <div className="space-y-2">
+                                {/* <div className="space-y-2">
                                     <p className="font-semibold">Suunniteltu isä:</p>
                                     <p className="text-gray-300">[Isän nimi]</p>
                                     <ul className="list-disc list-inside text-gray-300 pl-4">
                                         <li>Terveystulokset: Erinomaiset</li>
                                         <li>Näyttelytulokset: FI MVA</li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

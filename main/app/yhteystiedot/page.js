@@ -8,7 +8,7 @@ export default function ContactPage() {
             <Header title="Yhteystiedot" />
 
             <section className="relative bg-no-repeat bg-center h-screen" style={{ 
-                backgroundImage: "url('/img/banners/contact-hero.jpg')",
+                backgroundImage: "url('./img/banners/contact-hero.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: '50% 70%'
             }}>
@@ -24,9 +24,9 @@ export default function ContactPage() {
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-8">Yhteystiedot</h2>
                     <div className="text-lg space-y-6">
-                        <p>
+                        {/* <p>
                             <strong>Puhelin:</strong> <a href="tel:+358401234567" className="text-blue-400 hover:text-blue-500">+358 40 123 4567</a>
-                        </p>
+                        </p> */}
                         <p>
                             <strong>Sähköposti:</strong> <a href="mailto:katjalankinen75@gmail.com" className="text-blue-400 hover:text-blue-500">katjalankinen75@gmail.com</a>
                         </p>

@@ -2,7 +2,7 @@ const litters = [
     {
         id: 1,
         name: 'Pentue 1',
-        image: 'img/litters/1/hjap.jpg',
+        image: './img/litters/1/hjap.jpg',
         birth: '19.10.2022',
         mother: 'Laggan Haiku',
         father: 'Runokuno Beniyuki',
