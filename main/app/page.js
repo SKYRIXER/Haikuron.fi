@@ -34,7 +34,6 @@ export default function MainPage() {
                                 />
                                 <p>{dog.imagetext}</p>
                                 <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
-                                <p>{dog.description}</p>
                             </Link>                        
                         </div>
                     ))}

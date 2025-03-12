@@ -31,6 +31,7 @@ export default function Header() {
                         <a href="/tietoa" className="hover:underline">Tietoa</a>
                         <a href="/yhteystiedot" className="hover:underline">Yhteystiedot</a>
                         <a href="/pentueet" className="hover:underline">Pentueet</a>
+                        <a href="/suunnitelmat" className="hover:underline">Suunnitelmat</a>
                         <a href="/galleria" className="hover:underline">Galleria</a>
                     </nav>
                 </div>
@@ -48,6 +49,7 @@ export default function Header() {
                         <a href="/tietoa" className="text-white hover:underline">Tietoa</a>
                         <a href="/yhteystiedot" className="text-white hover:underline">Yhteystiedot</a>
                         <a href="/pentueet" className="text-white hover:underline">Pentueet</a>
+                        <a href="/suunnitelmat" className="text-white hover:underline">Suunnitelmat</a>
                         <a href="/galleria" className="text-white hover:underline">Galleria</a>
                     </nav>
                 </div>

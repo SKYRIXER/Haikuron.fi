@@ -7,7 +7,11 @@ export default function ContactPage() {
         <div className="bg-gray-900 min-h-screen text-white">
             <Header title="Yhteystiedot" />
 
-            <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/img/contact-hero.jpg')" }}>
+            <section className="relative bg-no-repeat bg-center h-screen" style={{ 
+                backgroundImage: "url('/img/banners/contact-hero.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: '50% 70%'
+            }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">Ota Yhteyttä</h2>
@@ -24,13 +28,10 @@ export default function ContactPage() {
                             <strong>Puhelin:</strong> <a href="tel:+358401234567" className="text-blue-400 hover:text-blue-500">+358 40 123 4567</a>
                         </p>
                         <p>
-                            <strong>Sähköposti:</strong> <a href="mailto:info@haikuron.fi" className="text-blue-400 hover:text-blue-500">info@haikuron.fi</a>
+                            <strong>Sähköposti:</strong> <a href="mailto:katjalankinen75@gmail.com" className="text-blue-400 hover:text-blue-500">katjalankinen75@gmail.com</a>
                         </p>
                         <p>
-                            <strong>Osoite:</strong> Kennel Haikuron, Haikurotie 12, 12345 Helsinki, Suomi
-                        </p>
-                        <p>
-                            <strong>Aukioloajat:</strong> Ma-Pe 10:00 - 18:00, La-Su: Suljettu
+                            <strong>Paikkakunta:</strong> Kennel Haikuron, Kangasala, Suomi
                         </p>
                     </div>
                 </div>
