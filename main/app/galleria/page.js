@@ -82,7 +82,7 @@ export default function GalleryPage() {
                         <img
                             src={galleryImages[selectedImage]}
                             alt={`Gallery image ${selectedImage + 1}`}
-                            className="max-h-[90vh] max-w-[90vw] object-contain"
+                            style={{ maxHeight: '90vh', maxWidth: '90vw', objectFit: 'contain' }}
                         />
                     </div>
                     <button 

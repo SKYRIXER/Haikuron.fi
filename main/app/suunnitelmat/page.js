@@ -25,10 +25,10 @@ export default function SuunnitelmatPage() {
                                 <div className="space-y-2">
                                     <p className="font-semibold">Suunniteltu emä:</p>
                                     <p className="text-gray-300">Laggan Haiku</p>
-                                    <ul className="list-disc list-inside text-gray-300 pl-4">
+                                    {/* <ul className="list-disc list-inside text-gray-300 pl-4">
                                         <li>Terveystulokset: Erinomaiset</li>
                                         <li>Näyttelytulokset: FI MVA</li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                                 {/* <div className="space-y-2">
                                     <p className="font-semibold">Suunniteltu isä:</p>

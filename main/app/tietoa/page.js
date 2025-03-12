@@ -11,7 +11,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">Tietoa Kennel Haikuronista</h2>
-                        <p className="text-lg md:text-xl">Rakkaudella kasvatettuja koiria jo vuosien ajan.</p>
+                        <p className="text-lg md:text-xl">Rakkaudella kasvatettuja koiria vuodesta 2022 lähtien.</p>
                     </div>
                 </div>
             </section>
