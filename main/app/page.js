@@ -34,6 +34,10 @@ export default function MainPage() {
                                 />
                                 <p>{dog.imagetext}</p>
                                 <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
+                                <div className="text-gray-300 text-sm">
+                                    <p className="mb-1">{dog.description2.info}</p>
+                                    <p className="italic">{dog.description2.hobby}</p>
+                                </div>
                             </Link>                        
                         </div>
                     ))}

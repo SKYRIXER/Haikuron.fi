@@ -27,9 +27,10 @@ export default function AboutPage() {
                     </p>
                     <p className="text-lg mb-6">
                         Sijaitsemme luonnonkauniissa ympäristössä, jossa koirat voivat nauttia ulkoilusta, liikunnasta
-                        ja leikkimisestä turvallisessa ja valvotussa ympäristössä. Meillä on myös pitkä kokemus
-                        koirien koulutuksesta ja kasvatuksesta, ja haluamme jakaa tietomme ja rakkautemme
-                        näihin uskomattomiin eläimiin kaikkien kanssa.
+                        ja leikkimisestä turvallisessa ja valvotussa ympäristössä. Meillä on pitkä kokemus
+                        koirien kanssa harrastamisesta agilityn, rallytokon ja näyttelyiden parissa sekä koirien 
+                        koulutuksesta ja kasvatuksesta. Haluamme jakaa tietomme ja rakkautemme näihin uskomattomiin 
+                        eläimiin kaikkien kanssa.
                     </p>
                 </div>
             </section>
