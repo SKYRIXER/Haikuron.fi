@@ -15,6 +15,17 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href={metadata.icons.icon} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "url": "https://www.haikuron.fi",
+              "logo": "https://www.haikuron.fi/logo.svg"
+            }),
+          }}
+        />
       </head>
       <body>
         {children}
