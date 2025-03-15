@@ -10,7 +10,7 @@ const dogs = [
         hobby: "Harrastuksena pihan vahtiminen ja näyttelyt."
       },
       image: "/img/main/Haiku.jpg",
-      imagetext: "Kuvaaja: Aino Vakkila"
+      imagetext: "Kuvaaja: Aino Vakkilainen"
     },
     { 
       id: 2, 
@@ -36,7 +36,7 @@ const dogs = [
         hobby: "Harrastuksena on rallytokoa ja näyttelyitä."
       },
       image: "/img/main/Totoro.jpg",
-      imagetext: "Kuvaaja: Aino Vakkila"
+      imagetext: "Kuvaaja: Aino Vakkilainen"
     },
   ];
   
