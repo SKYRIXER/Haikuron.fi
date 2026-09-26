@@ -1,3 +1,4 @@
+import { imageSource } from '../components/optimized-image';
 import React from 'react';
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
@@ -7,7 +8,7 @@ export default function AboutPage() {
         <div className="bg-gray-900 min-h-screen text-white">
             <Header title="Tietoa Kennel Haikuronista" />
 
-            <section className="relative bg-cover md:bg-center bg-[center_left_35%] h-screen" style={{ backgroundImage: "url('/img/banners/about-hero.jpg')" }}>
+            <section className="relative bg-cover md:bg-center bg-[center_left_35%] h-screen" style={{ backgroundImage: `url(${imageSource('/img/banners/about-hero.jpg')})` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
                         <h2 className="text-4xl md:text-5xl font-bold mb-4">Tietoa Kennel Haikuronista</h2>

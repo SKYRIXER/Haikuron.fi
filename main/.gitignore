@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated from the original photos by predev/prebuild
+/public/img/optimized/
+/app/data/image-manifest.json

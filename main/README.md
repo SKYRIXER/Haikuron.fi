@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Image optimization
+
+Original photos are kept in `public/img`. `npm run dev` and `npm run build`
+automatically generate WebP versions (up to 2560 pixels wide, quality 85) and
+`app/data/image-manifest.json`. Run `npm run images:optimize` to regenerate them
+after replacing or adding photos while the development server is running.
+Generated files are ignored by Git; deploy the complete `out` directory after building.
+
+The shared `app/components/optimized-image.js` component serves responsive image
+sizes with native lazy loading. Gallery lightbox images load immediately when
+opened. Background images use the largest WebP version. Original photos, EXIF
+orientation, aspect ratios, existing CSS crops and visible page content are preserved.
+
 ## Getting Started
 
 First, run the development server:

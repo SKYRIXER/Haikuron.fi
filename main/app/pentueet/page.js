@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../components/optimized-image';
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import litters from "../data/litters";
@@ -12,10 +13,13 @@ export default function PentueetPage() {
                 <div className={`grid grid-cols-1 md:grid-cols-${litters.length === 1 ? '1' : '2'} gap-10 ${litters.length === 1 ? 'max-w-4xl mx-auto' : ''}`}>
                     {litters.map(litter => (
                         <div key={litter.id} className="bg-gray-800 p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start transition-colors duration-300">
-                            <img 
-                                src={litter.image} 
-                                alt={litter.name} 
-                                className="rounded-lg mb-4 md:mb-0 md:mr-8 w-full md:w-1/2 h-96 object-cover hover:opacity-90 transition-opacity duration-300" 
+                            <Image
+                                src={litter.image}
+                                alt={litter.name}
+                                width={800}
+                                height={600}
+                                className="rounded-lg mb-4 md:mb-0 md:mr-8 w-full md:w-1/2 h-96 object-cover hover:opacity-90 transition-opacity duration-300"
+                                sizes="(min-width: 768px) 50vw, 100vw"
                             />
                             <div className="text-left space-y-3">
                                 <h3 className="text-2xl font-semibold mb-4">{litter.name}</h3>

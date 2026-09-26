@@ -1,4 +1,5 @@
 import React from 'react';
+import Image, { imageSource } from './components/optimized-image';
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 import dogs from './data/dogs';
@@ -11,7 +12,7 @@ export default function MainPage() {
 
             <section
                 className="relative bg-cover bg-center h-screen"
-                style={{ backgroundImage: `url(${"./img/main/banner.jpg" })` }}
+                style={{ backgroundImage: `url(${imageSource('/img/main/banner.jpg')})` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="text-center">
@@ -25,12 +26,15 @@ export default function MainPage() {
                 <h2 className="text-center text-3xl font-bold mb-12">Tutustu koiriimme</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {dogs.map(dog => (
-                        <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg  hover:bg-gray-700 transition-colors duration-300">
-                            <Link href={`/tietoa/${dog.shortname}`}>
-                                <img 
-                                    src={dog.image} 
-                                    alt={dog.name} 
-                                    className="rounded-lg mb-4 w-full h-72 object-cover" 
+                        <div key={dog.id} className="bg-gray-800 p-5 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
+                            <Link href={`/tietoa/${dog.shortname}`} className="block">
+                                <Image
+                                    src={dog.image}
+                                    alt={dog.name}
+                                    width={800}
+                                    height={600}
+                                    className="rounded-lg mb-4 w-full h-72 object-cover"
+                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                                 />
                                 <p>{dog.imagetext}</p>
                                 <h3 className="text-xl font-semibold mb-2">{dog.name}</h3>
@@ -38,12 +42,12 @@ export default function MainPage() {
                                     <p className="mb-1">{dog.description2.info}</p>
                                     <p className="italic">{dog.description2.hobby}</p>
                                 </div>
-                            </Link>                        
+                            </Link>
                         </div>
                     ))}
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

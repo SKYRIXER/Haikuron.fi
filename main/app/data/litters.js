@@ -12,6 +12,18 @@ const litters = [
             { id: 2, name: 'Haikuron Tomoko' },
             { id: 3, name: 'Haikuron Totoro' },
         ]
+    },
+    {
+        id: 2,
+        name: 'Pentue 2',
+        image: '/img/litters/2/hjap2.jpg',
+        birth: '30.6.2026',
+        mother: 'Laggan Haiku',
+        father: 'Sakuraryuu Go Sanuki Mizumotosou',
+        link: 'https://jalostus.kennelliitto.fi/frmKoira.aspx?RekNo=FI35506%2F26&R=257',
+        puppies: [
+            { id: 1, name: 'Haikuron Sakura No Hana' }
+        ]
     }
 ];
 

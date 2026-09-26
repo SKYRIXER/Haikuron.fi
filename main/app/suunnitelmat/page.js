@@ -17,28 +17,12 @@ export default function SuunnitelmatPage() {
                         <h3 className="text-2xl font-semibold mb-6">Pentuesuunnitelma 2025</h3>
                         <div className="space-y-4">
                             <p className="text-gray-300">
-                                Suunnittelemme seuraavaa pentuetta vuodelle 2025. 
-                                Yhdistelmä on huolellisesti suunniteltu terveysnäkökohdat ja 
-                                luonneominaisuudet huomioiden.
+                                Seuraavaa pentuetta suunnitellaan mahdollisesti syksy 2026/talvi 2027.
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <p className="font-semibold">Suunniteltu emä:</p>
-                                    <p className="text-gray-300">Laggan Haiku</p>
-                                    {/* <ul className="list-disc list-inside text-gray-300 pl-4">
-                                        <li>Terveystulokset: Erinomaiset</li>
-                                        <li>Näyttelytulokset: FI MVA</li>
-                                    </ul> */}
-                                </div>
-                                {/* <div className="space-y-2">
-                                    <p className="font-semibold">Suunniteltu isä:</p>
-                                    <p className="text-gray-300">[Isän nimi]</p>
-                                    <ul className="list-disc list-inside text-gray-300 pl-4">
-                                        <li>Terveystulokset: Erinomaiset</li>
-                                        <li>Näyttelytulokset: FI MVA</li>
-                                    </ul>
-                                </div> */}
-                            </div>
+                            <p className="text-gray-300 font-bold">
+                                Suunniteltu emä:
+                            </p>
+                            <p className="text-gray-300">Haikuron Totoro</p>
                         </div>
                     </div>
 

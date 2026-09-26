@@ -1,3 +1,4 @@
+import { imageSource } from '../components/optimized-image';
 import React from 'react';
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
@@ -8,7 +9,7 @@ export default function ContactPage() {
             <Header title="Yhteystiedot" />
 
             <section className="relative bg-no-repeat bg-center h-screen" style={{ 
-                backgroundImage: "url('/img/banners/contact-hero.jpg')",
+                backgroundImage: `url(${imageSource('/img/banners/contact-hero.jpg')})`,
                 backgroundSize: 'cover',
                 backgroundPosition: '50% 70%'
             }}>
@@ -28,7 +29,7 @@ export default function ContactPage() {
                             <strong>Puhelin:</strong> <a href="tel:+358401234567" className="text-blue-400 hover:text-blue-500">+358 40 123 4567</a>
                         </p> */}
                         <p>
-                            <strong>Sähköposti:</strong> <a href="mailto:katjalankinen75@gmail.com" className="text-blue-400 hover:text-blue-500">katjalankinen75@gmail.com</a>
+                            <strong>Sähköposti:</strong> <a href="mailto:haikuronkennel@gmail.com" className="text-blue-400 hover:text-blue-500">haikuronkennel@gmail.com</a>
                         </p>
                         <p>
                             <strong>Paikkakunta:</strong> Kennel Haikuron, Kangasala, Suomi

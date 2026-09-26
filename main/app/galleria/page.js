@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Image from '../components/optimized-image';
 import { useSwipeable } from 'react-swipeable';
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
@@ -20,6 +21,7 @@ const galleryImages = [
     '/img/gallery/13.jpg',
     '/img/gallery/14.jpg',
     '/img/gallery/15.jpg',
+    '/img/gallery/16.jpg',
 ];
 
 export default function GalleryPage() {
@@ -47,15 +49,18 @@ export default function GalleryPage() {
                 <h2 className="text-center text-3xl font-bold mb-12">Kuvagalleria</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {galleryImages.map((image, index) => (
-                        <div 
-                            key={index} 
-                            className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
+                        <div
+                            key={index}
+                            className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity cursor-pointer"
                             onClick={() => setSelectedImage(index)}
                         >
-                            <img
+                            <Image
                                 src={image}
                                 alt={`Gallery image ${index + 1}`}
-                                className="w-full h-full object-cover cursor-pointer"
+                                width={1200}
+                                height={1200}
+                                className="w-full h-full object-cover"
+                                sizes="(min-width: 1024px) calc((100vw - 304px) / 3), (min-width: 768px) calc((100vw - 152px) / 2), calc(100vw - 64px)"
                             />
                         </div>
                     ))}
@@ -66,28 +71,35 @@ export default function GalleryPage() {
             {/* Lightbox */}
             {selectedImage !== null && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center">
-                    <button 
+                    <button
                         className="absolute top-4 right-4 text-white text-2xl"
                         onClick={() => setSelectedImage(null)}
+                        aria-label="Sulje kuva"
                     >
                         ✕
                     </button>
-                    <button 
+                    <button
                         className="absolute left-4 text-white text-4xl md:text-6xl lg:text-7xl"
                         onClick={handlePrev}
+                        aria-label="Edellinen kuva"
                     >
                         ‹
                     </button>
                     <div {...swipeHandlers}>
-                        <img
+                        <Image
                             src={galleryImages[selectedImage]}
                             alt={`Gallery image ${selectedImage + 1}`}
-                            style={{ maxHeight: '90vh', maxWidth: '90vw', objectFit: 'contain' }}
+                            width={1600}
+                            height={1200}
+                            className="max-h-[90vh] max-w-[90vw] object-contain"
+                            sizes="90vw"
+                            loading="eager"
                         />
                     </div>
-                    <button 
+                    <button
                         className="absolute right-4 text-white text-4xl md:text-6xl lg:text-7xl"
                         onClick={handleNext}
+                        aria-label="Seuraava kuva"
                     >
                         ›
                     </button>

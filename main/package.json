@@ -6,18 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve out",
-    "lint": "next lint"
+    "lint": "next lint",
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "prebuild": "npm run images:optimize",
+    "predev": "npm run images:optimize"
   },
   "dependencies": {
-    "next": "14.2.15",
+    "next": "^16.3.3",
     "react": "^18",
     "react-dom": "^18",
     "react-swipeable": "^7.0.2"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.3",
     "postcss": "^8",
+    "sharp": "^0.35.4",
     "tailwindcss": "^3.4.1"
   }
 }
