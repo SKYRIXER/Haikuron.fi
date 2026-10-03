@@ -14,10 +14,10 @@ export default function SuunnitelmatPage() {
                 <div className="space-y-10">
                     {/* 2025 Pentue Suunnitelma */}
                     <div className="bg-gray-800 p-8 rounded-lg shadow-lg transition-colors duration-300">
-                        <h3 className="text-2xl font-semibold mb-6">Pentuesuunnitelma 2025</h3>
+                        <h3 className="text-2xl font-semibold mb-6">Pentuesuunnitelmat</h3>
                         <div className="space-y-4">
                             <p className="text-gray-300">
-                                Seuraavaa pentuetta suunnitellaan mahdollisesti syksy 2026/talvi 2027.
+                                Seuraavaa pentuetta suunnitellaan mahdollisesti keväälle 2027.
                             </p>
                             <p className="text-gray-300 font-bold">
                                 Suunniteltu emä:
